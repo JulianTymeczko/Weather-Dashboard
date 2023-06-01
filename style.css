@@ -1,0 +1,17 @@
+.header-background{
+    
+    text-align: center;
+    background: linear-gradient(to right, #187492, #02023b);
+}
+
+.header-background h1{
+    font-size:3rem;
+    color: rgb(223, 213, 213);
+    margin-left: 30%;
+    padding: 1rem;
+    font-family: 'Asap Condensed', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Prompt', sans-serif;
+
+    
+}
