@@ -15,3 +15,37 @@
 
     
 }
+.custom-main{
+    margin:0px;
+   
+}
+.custom-days{
+    gap: 20px;
+}
+
+
+.custom-cities{
+    gap:15px
+}
+.custom-cities li{
+    text-align: center;
+}
+
+.custom-left-div h1,input,button{
+    margin-bottom:15px;
+}
+
+.custom-left-div button{
+    width:100%;
+   
+    
+}
+.custom-city{
+    border: 1px solid black
+}
+
+
+.custom-nothing{
+    border-bottom: 1px solid black;
+   margin-bottom: 15px;
+}
