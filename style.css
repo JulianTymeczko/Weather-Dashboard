@@ -17,13 +17,18 @@
 }
 .custom-main{
     margin:0px;
+    padding-left:10px;
    
 }
 .custom-days{
     gap: 20px;
+    display:flex;
 }
 
-
+.custom-days div{
+    background-color: #081829;
+    color: rgb(236, 231, 231);
+}
 .custom-cities{
     gap:15px
 }
@@ -41,11 +46,56 @@
     
 }
 .custom-city{
-    border: 1px solid black
+    border: 1px solid black;
+    margin-top: 5px;
+    padding:0px;
+    height: fit-content
+
+}
+.custom-city ul{
+    padding:0px
+}
+.custom-city h1,.custom-city ul{
+   padding:15px;
 }
 
-
+.custom-city ul li{
+   padding-bottom:10px;
+}
 .custom-nothing{
     border-bottom: 1px solid black;
    margin-bottom: 15px;
+}
+
+.custom-right-div{
+    width:70%;
+    gap:20px;
+   
+
+}
+
+.custom-forecast{
+    padding:0px;
+    margin-top: -80px
+}
+.custom-forecast h1{
+    font-size:1.8rem;
+}
+
+.custom-left-div{
+    margin-right:30px;
+    width:20%;
+}
+
+@media only screen and (max-width:1350px) {
+    .custom-left-div,.custom-right-div{
+        width:100%;
+    }
+
+    .custom-forecast{
+        margin-top:60px;
+    }
+    .custom-days{
+        flex-wrap: wrap;
+    }
 }
