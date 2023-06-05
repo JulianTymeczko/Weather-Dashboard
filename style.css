@@ -21,13 +21,22 @@
    
 }
 .custom-days{
-    gap: 20px;
+    gap: 30px;
     display:flex;
+    justify-content: space-around;
 }
 
 .custom-days div{
     background-color: #081829;
     color: rgb(236, 231, 231);
+   
+    
+     
+    
+
+}
+.custom-h5{
+    margin-bottom:25px;
 }
 .custom-cities{
     gap:15px
@@ -36,20 +45,23 @@
     text-align: center;
 }
 
-.custom-left-div h1,input,button{
+.custom-left-div h1,input{
     margin-bottom:15px;
 }
 
-.custom-left-div button{
+.custom-left-div .custom-search-button{
     width:100%;
-   
+    margin-bottom:15px;
     
 }
+
 .custom-city{
     border: 1px solid black;
     margin-top: 5px;
     padding:0px;
-    height: fit-content
+    min-height: 225px;
+    max-height: 225px;
+   
 
 }
 .custom-city ul{
@@ -60,7 +72,7 @@
 }
 
 .custom-city ul li{
-   padding-bottom:10px;
+   padding-bottom:15px;
 }
 .custom-nothing{
     border-bottom: 1px solid black;
@@ -70,22 +82,29 @@
 .custom-right-div{
     width:70%;
     gap:20px;
-   
+   height:max-content;
 
 }
 
 .custom-forecast{
     padding:0px;
-    margin-top: -80px
+    margin-top: 20px;
+    
 }
 .custom-forecast h1{
-    font-size:1.8rem;
+    font-size:1.7rem;
 }
 
 .custom-left-div{
     margin-right:30px;
     width:20%;
 }
+
+.custom-list-button{
+    border:none;
+    
+}
+
 
 @media only screen and (max-width:1350px) {
     .custom-left-div,.custom-right-div{
