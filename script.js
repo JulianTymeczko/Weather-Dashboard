@@ -15,7 +15,7 @@ var searchButton = document.getElementsByClassName("custom-search-button")
 
 
 window.addEventListener("load", function () {
-    var cityURl = `http://api.openweathermap.org/geo/1.0/direct?q=${localStorage.getItem("searchedCity")},&appid=f68bfc829a485c8cdb7fdea92030ea08`
+    var cityURl = `https://api.openweathermap.org/geo/1.0/direct?q=${localStorage.getItem("searchedCity")},&appid=f68bfc829a485c8cdb7fdea92030ea08`
     fetch(cityURl)
         .then(function (response) {
             return response.json()
@@ -164,7 +164,7 @@ searchButton[0].addEventListener("click", function () {
     x.textContent = searchInput.value
     localStorage.setItem("searchedCity", `${searchInput.value}`)
     // displaying current weather conditions
-    var cityURl = `http://api.openweathermap.org/geo/1.0/direct?q=${searchInput.value},&appid=f68bfc829a485c8cdb7fdea92030ea08`
+    var cityURl = `https://api.openweathermap.org/geo/1.0/direct?q=${searchInput.value},&appid=f68bfc829a485c8cdb7fdea92030ea08`
     fetch(cityURl)
         .then(function (response) {
             return response.json()
@@ -277,7 +277,7 @@ searchButton[0].addEventListener("click", function () {
 
 
 
-    var pastCityURL = `http://api.openweathermap.org/geo/1.0/direct?q=${x.textContent},&appid=f68bfc829a485c8cdb7fdea92030ea08`
+    var pastCityURL = `https://api.openweathermap.org/geo/1.0/direct?q=${x.textContent},&appid=f68bfc829a485c8cdb7fdea92030ea08`
 
     x.addEventListener("click", function () {
         localStorage.setItem("searchedCity", `${x.textContent}`)
