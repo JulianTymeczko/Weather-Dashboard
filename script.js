@@ -15,12 +15,14 @@ var searchButton = document.getElementsByClassName("custom-search-button")
 
 
 window.addEventListener("load", function () {
+    if (localStorage.getItem("searchedCity")){
     var cityURl = `https://api.openweathermap.org/geo/1.0/direct?q=${localStorage.getItem("searchedCity")},&appid=f68bfc829a485c8cdb7fdea92030ea08`
     fetch(cityURl)
         .then(function (response) {
             return response.json()
         })
         .then(function (data) {
+            
             var lat = data[0].lat
             var lon = data[0].lon
             var currentWeatherURL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=f68bfc829a485c8cdb7fdea92030ea08&units=imperial`
@@ -123,6 +125,7 @@ window.addEventListener("load", function () {
 
 
         })
+    }
 })
 
 
